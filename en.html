@@ -134,6 +134,14 @@
   .app-link:hover{color:var(--or-clair);border-color:var(--or-clair);}
   .model-tag{font-size:0.72rem;color:var(--gris);letter-spacing:0.04em;margin-top:0.6rem;}
 
+  .app-card.has-shot{grid-template-columns:56px 1fr 160px;}
+  .app-shot{
+    width:160px;border-radius:12px;overflow:hidden;align-self:center;
+    border:1px solid rgba(201,162,75,0.35);
+  }
+  .app-shot img{width:100%;display:block;}
+  @media (max-width:640px){ .app-shot{display:none;} }
+
   /* DON */
   .don{
     text-align:center;
@@ -206,7 +214,7 @@
 
   <div class="apps-grid">
 
-    <div class="app-card">
+    <div class="app-card has-shot">
       <div class="app-icon"><img src="https://play-lh.googleusercontent.com/_HAcCXCCr8hc-NxTbyQuu6RaUSpf_iUj96GejlJN56EJsLbfm1WKQkbTtpEBYf7LhbGiTJeePcj_Z2pGlDh6JA=w240-h480" alt=""></div>
       <div>
         <span class="app-order">First app</span>
@@ -217,9 +225,10 @@
         <p class="model-tag">10 free AI readings, then Premium subscription</p>
         <a href="https://play.google.com/store/apps/details?id=com.france.tarots" class="app-link" target="_blank" rel="noopener">View on Google Play ↗</a>
       </div>
+      <div class="app-shot"><img src="tarots-shot.png" alt=""></div>
     </div>
 
-    <div class="app-card">
+    <div class="app-card has-shot">
       <div class="app-icon"><img src="https://play-lh.googleusercontent.com/RsSOA7WLJEZYMn7cr05y2ORaWl65YEx9WFuDiIcSo81jyHw5GnZrjFWzgZDItg7LBDmeNSp59vCyJIXh48hNUoI=w240-h480" alt=""></div>
       <div>
         <span class="app-order">Second app</span>
@@ -230,9 +239,10 @@
         <p class="model-tag">Free, no ads</p>
         <a href="https://play.google.com/store/apps/details?id=com.kim.oraclemarie" class="app-link" target="_blank" rel="noopener">View on Google Play ↗</a>
       </div>
+      <div class="app-shot"><img src="marie-shot.png" alt=""></div>
     </div>
 
-    <div class="app-card">
+    <div class="app-card has-shot">
       <div class="app-icon"><img src="https://play-lh.googleusercontent.com/_zHc0HwGRrpvv9rcGF-xnGkp1aHfxI4M0FsMMZqtRML5R8_Nj4-uedj-y9OYikaYUg0xE2HGm3SN8FCk7zu0" alt=""></div>
       <div>
         <span class="app-order">Third app</span>
@@ -243,9 +253,10 @@
         <p class="model-tag">10 free dreams, then Premium subscription</p>
         <a href="https://play.google.com/store/apps/details?id=com.france.reves_interpretation" class="app-link" target="_blank" rel="noopener">View on Google Play ↗</a>
       </div>
+      <div class="app-shot"><img src="reves-shot.png" alt=""></div>
     </div>
 
-    <div class="app-card">
+    <div class="app-card has-shot">
       <div class="app-icon"><img src="empreinte-icon.png" alt=""></div>
       <div>
         <span class="app-order">Fourth app — in progress</span>
@@ -255,18 +266,20 @@
         <p>A self-knowledge app bringing together several approaches: numerology, mirror hours, archangels, birth tarot, Human Design, and a complete Yi-King module using the traditional three-coin method, with its 64 hexagrams.</p>
         <p class="model-tag">Will be free</p>
       </div>
+      <div class="app-shot"><img src="empreinte-shot.png" alt=""></div>
     </div>
 
-    <div class="app-card">
+    <div class="app-card has-shot">
       <div class="app-icon" style="background:rgba(139,111,60,0.15);">◆</div>
       <div>
         <span class="app-order">Fifth app — in progress</span>
         <span class="app-status status-dev">In development</span>
         <h3>ScanArtisan</h3>
         <p class="tagline">Quotes and invoices for tradespeople</p>
-        <p>A management tool designed for tradespeople: quotes, invoices, client profiles, accessible from a phone as well as from a computer on the same local network, with automatic backup.</p>
+        <p>A management tool designed for tradespeople: quotes, electronic invoices compliant with the Factur-X standard, client profiles, accessible from a phone as well as from a computer on the same local network, with automatic backup.</p>
         <p class="model-tag">Will have a subscription</p>
       </div>
+      <div class="app-shot"><img src="scanartisan-shot.png" alt=""></div>
     </div>
 
   </div>
