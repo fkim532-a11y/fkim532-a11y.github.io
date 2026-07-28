@@ -8,8 +8,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap');
 
   :root{
-    --noir: #0a0a12;
-    --noir-2: #12121e;
+    --noir: #1a1a34;
+    --noir-2: #242444;
     --or: #c9a24b;
     --or-clair: #e8c874;
     --blanc: #e8e6e0;
@@ -117,8 +117,11 @@
   .app-status{
     display:inline-block;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;
     padding:0.3em 0.75em;border-radius:100px;margin-bottom:0.75rem;
+    transition:background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   }
   .status-live{color:#8fd4a8;background:rgba(143,212,168,0.1);border:1px solid rgba(143,212,168,0.3);}
+  a.status-live{cursor:pointer;}
+  a.status-live:hover{background:rgba(143,212,168,0.3);border-color:#8fd4a8;color:#c9f0d6;}
   .status-dev{color:var(--or-clair);background:rgba(232,200,116,0.08);border:1px solid rgba(232,200,116,0.3);}
   .status-wait{color:#a89bd4;background:rgba(168,155,212,0.08);border:1px solid rgba(168,155,212,0.3);}
   .app-card h3{font-size:1.5rem;color:var(--blanc);margin-bottom:0.5rem;}
@@ -207,7 +210,7 @@
       <div class="app-icon"><img src="https://play-lh.googleusercontent.com/_HAcCXCCr8hc-NxTbyQuu6RaUSpf_iUj96GejlJN56EJsLbfm1WKQkbTtpEBYf7LhbGiTJeePcj_Z2pGlDh6JA=w240-h480" alt=""></div>
       <div>
         <span class="app-order">Première application</span>
-        <span class="app-status status-live">Disponible sur Google Play</span>
+        <a href="https://play.google.com/store/apps/details?id=com.france.tarots" class="app-status status-live" target="_blank" rel="noopener">Disponible sur Google Play</a>
         <h3>Tarots</h3>
         <p class="tagline">Tarot de Marseille & Tarot des Archanges, interprétation par IA</p>
         <p>Deux jeux — le Tarot de Marseille (78 cartes) et le Tarot des Archanges et Anges Gardiens (44 cartes) — avec quatre types de tirages, dont la Croix Celtique. Chaque tirage peut être interprété par une intelligence artificielle qui tient compte de l'ensemble des cartes tirées. Journal de tirages, bibliothèque de 122 cartes, rappel quotidien.</p>
@@ -220,7 +223,7 @@
       <div class="app-icon"><img src="https://play-lh.googleusercontent.com/RsSOA7WLJEZYMn7cr05y2ORaWl65YEx9WFuDiIcSo81jyHw5GnZrjFWzgZDItg7LBDmeNSp59vCyJIXh48hNUoI=w240-h480" alt=""></div>
       <div>
         <span class="app-order">Deuxième application</span>
-        <span class="app-status status-live">Disponible sur Google Play</span>
+        <a href="https://play.google.com/store/apps/details?id=com.kim.oraclemarie" class="app-status status-live" target="_blank" rel="noopener">Disponible sur Google Play</a>
         <h3>Oracle de Marie</h3>
         <p class="tagline">33 cartes, une présence mariale au quotidien</p>
         <p>Un tirage quotidien parmi 33 cartes inspirées de la Vierge Marie, selon le thème de votre choix — spiritualité, amour, travail, santé, famille. Tirage en trois cartes Corps/Âme/Esprit pour les questions plus profondes, 14 prières avec minuteur de méditation, 60 citations de sagesse, journal spirituel. Entièrement gratuite, sans publicité, fonctionne hors-ligne.</p>
@@ -230,19 +233,20 @@
     </div>
 
     <div class="app-card">
-      <div class="app-icon" style="background:rgba(168,155,212,0.1);">☾</div>
+      <div class="app-icon"><img src="https://play-lh.googleusercontent.com/_zHc0HwGRrpvv9rcGF-xnGkp1aHfxI4M0FsMMZqtRML5R8_Nj4-uedj-y9OYikaYUg0xE2HGm3SN8FCk7zu0" alt=""></div>
       <div>
         <span class="app-order">Troisième application</span>
-        <span class="app-status status-wait">En attente de validation Google Play</span>
+        <a href="https://play.google.com/store/apps/details?id=com.france.reves_interpretation" class="app-status status-live" target="_blank" rel="noopener">Disponible sur Google Play</a>
         <h3>Rêves — Interprétation</h3>
         <p class="tagline">Comprendre le langage de vos rêves</p>
-        <p>Une application pour noter et interpréter vos rêves, actuellement soumise à validation sur le Google Play Store. Plus de détails suivront dès sa publication.</p>
-        <p class="model-tag">Avec abonnement</p>
+        <p>Un journal pour noter vos rêves au réveil, avec une interprétation personnalisée générée par IA, un dictionnaire des symboles et des statistiques (humeurs, fréquence). Export PDF, dictée vocale, rappel quotidien.</p>
+        <p class="model-tag">10 rêves gratuits, puis abonnement Premium</p>
+        <a href="https://play.google.com/store/apps/details?id=com.france.reves_interpretation" class="app-link" target="_blank" rel="noopener">Voir sur Google Play ↗</a>
       </div>
     </div>
 
     <div class="app-card">
-      <div class="app-icon" style="background:rgba(201,162,75,0.1);">☯</div>
+      <div class="app-icon"><img src="empreinte-icon.png" alt=""></div>
       <div>
         <span class="app-order">Quatrième application — en cours</span>
         <span class="app-status status-dev">En développement</span>
